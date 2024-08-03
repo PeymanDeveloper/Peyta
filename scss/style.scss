@@ -1,0 +1,503 @@
+$color1 : rgb(51, 94, 234);
+$color2 : rgb(80, 102, 144);
+$color3 : #869ab8;
+$color4 : #42ba96;
+
+@mixin span {
+    right: 10px;
+    top: 23px;
+    background-color: rgba(51,94,234,.1);
+    width: 55px !important;
+    font-size: 13px !important;
+}
+
+@media screen and (max-width : 992px) {
+    #navbarSupportedContent{
+        position: fixed !important;
+        width: 95vw !important;
+        height: 92vh;
+        top: 1rem;
+        left: 1.20rem;
+        border-radius: 10px;
+        background-color: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-shadow: 0 0 20px -10px black;
+    }
+
+    .dis-one-sec{
+        font-size: 40px !important;
+    }
+
+    .p-sec-two{
+        text-align: left !important;
+    }
+
+    .h5-sec-two{
+        font-size: 18px !important;
+    }
+    
+    .card-anime{
+        width: 20rem !important;
+    }
+
+    .p-slider{
+        font-size: 15px !important;
+    }
+
+    .svg{
+        width: 140px !important;
+    }
+
+    .btn-rl{
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .dis-two{
+        font-size: 23px !important;
+    }
+
+    .p-muted{
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .p-sec-two{
+        text-align: center !important;
+    }
+
+    .card-anime{
+        width: 100% !important;
+    }
+
+    .btn-rl{
+        top: 70% !important;
+    }
+
+    .img-slider{
+        border-bottom-left-radius: 130px;
+        border-bottom-right-radius: 130px !important;
+    }
+
+    .dis-two{
+        font-size: 24px !important;
+    }
+
+    .p-muted{
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .h-muted2{
+        font-size: 23px !important;
+    }
+    .p-muted2{
+        font-size: 15px !important;
+    }
+    .muted{
+        font-size: 15px !important;
+    }
+    .btn-footer{
+        font-size: 15px !important;
+    }
+    .p-ww{
+        font-size: 14px !important;
+    }
+    .card-anime{
+        width: 95% !important;
+        font-size: 13px !important;
+        button{
+            font-size: 15px !important;
+        }
+    }
+
+    .div-container{
+        h3{
+            font-size: 20px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+        i{
+            font-size: 16px !important;
+        }
+
+    }
+
+    .dis-two{
+        font-size: 23px !important;
+    }
+
+    .p-muted{
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width : 390px) {
+    .p-ww{
+        font-size: 11px !important;
+    }
+    .dis-two{
+        font-size: 21px !important;
+    }
+
+    .div-one-sec{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & button:nth-child(2){
+            margin-left: 0px !important;
+            margin-top: 15px;
+        }
+    }
+
+    .dis-one-sec{
+        font-size: 30px !important;
+    }
+
+    .p-sec-one{
+        font-size: 15px !important;
+    }
+}
+
+.navbar-btn{
+    background-color: $color1 !important;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px !important;
+    transition: all .4s;
+    &:hover{
+        background-color: rgb(45, 79, 190) !important;
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 50px -18px $color1;
+    }
+}
+
+.navbar-ul{
+    width: 480px;
+}
+
+.nav-link{
+    letter-spacing: 1px;
+    font-weight: 500 !important;
+    color: $color2 !important;
+    cursor: pointer;
+    &:hover{
+        color: $color1 !important;
+    }
+}
+
+.navbar-btn-toggler{
+    outline: none !important;
+}
+
+.drop{
+    width: 640px;
+    height: 320px;
+    // border: 1px solid red;
+    top: 50px;
+    left: -260px;
+    border-radius: 15px;
+    .cr{
+        width: 40px;
+        height: 40px;
+        top: -8px;
+        left: 287px;
+        transform: rotateZ(45deg);
+        background-color: rgb(41, 71, 172);
+    }
+    .row.w-100{
+        border-radius: 15px !important;
+        overflow: hidden;
+    }
+    .bg-link-img{
+        background-image: url("../photo-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .container2{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(45, 79, 190 , .8);
+            button{
+                background-color: #fff !important;
+                border: none !important;
+                font-size: 18px;
+                padding: 13px;
+                &:hover{
+                    background-color: rgb(221, 221, 221) !important;
+                }
+            }
+            p{
+                font-size: 15px;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.ul-dropdown{
+    a{
+        margin-top: 14px;
+        font-size: 15px !important;
+        color: $color2 !important;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color .3s;
+        &:hover{
+            color: $color1 !important;
+        }
+    }
+    h6{
+        font-size: 15px !important;
+    }
+}
+
+.drop2{
+    width: 360px !important;
+    height: 280px !important;
+    border-radius: 15px !important;
+    left: -115px !important;
+    .h6-Documentation{
+        font-size: 14px !important;
+    }
+    .p-Documentation{
+        color: $color2;
+    }
+    .col-12{
+        cursor: pointer;
+    }
+    span{
+        @include span();
+    }
+}
+
+.drop3{
+    width: 230px !important;
+    height: 250px !important;
+    left: -70px !important;
+    span{
+        color: $color2;
+        // margin-right: 100px;
+    } 
+    .col-12{
+        cursor: pointer;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        &:hover{
+            span{
+                color: $color1;
+            }
+            i{
+                color: $color1;
+            }
+        }
+
+        .dropdown-link{
+            width: 230px;
+            right: -220px;
+            top: 0;
+            border-radius: 15px;
+            a{
+                text-decoration: none;
+                color: $color2;
+                margin-top: 16px;
+                margin-left: 10px;
+                &:hover{
+                    color: $color1;
+                }
+            }
+        }
+    }
+}
+
+.ww{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.lg-navbar{
+    h6{
+        font-size: 13px;
+    }
+    a{
+        color: $color2;
+        margin-top: 11px;
+        text-decoration: none;
+        transition: color .4s;
+        font-size: 15px;
+        &:hover{
+            color: $color1;
+        }
+    }
+}
+
+.acco-link{
+    color: $color2;
+    text-decoration: none;
+}
+
+.span-two{
+    @include span();
+    top: 40px !important;
+}
+
+.col-again{
+    cursor: pointer;
+}
+
+.p-sec-one , .p-sec-two{
+    color: $color3 !important;
+}
+
+.btn-sec-one{
+    font-weight: 500;
+    background-color: $color1;
+    transition: all .4s;
+    &:hover{
+        background-color: rgb(45, 79, 190) !important;
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 50px -18px $color1;
+    }
+    border-radius: 10px !important;
+}
+
+.btn2-sec-one{
+    font-weight: 500;
+    background-color: rgba(51,94,234,.1);
+    border-radius: 10px !important;
+}
+
+.p-sec-two{
+    text-align: justify;
+}
+
+.gray-text-600{
+    color: $color3 !important;
+}
+
+.h3-anime{
+    color: $color4!important;
+}
+
+.p-next-anime{
+    color: $color3;
+}
+
+.i-color-anime{
+    background-color: rgba(66,186,150,.1);
+    color: $color4;
+}
+
+.p-color-anime{
+    color: $color4;
+    font-size: 17px;
+}
+
+.btn.w-100.text-white{
+    background-color: rgb(66, 186, 150);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .3s;
+    &:hover{
+        background-color: rgb(46, 134, 108);
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 50px -18px rgb(66, 186, 150);
+    }
+}
+
+.card-anime{
+    transition: all .3s;
+    &:hover{
+        transform: translateY(-5px);
+        // box-shadow: 0px 0px 50px -18px rgb(66, 186, 150);
+    }
+}
+
+.row-anime{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+// .span-anime{
+//     border-right: 0.1em solid;
+//     // width: 4ch;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     animation: typing 3s infinite alternate steps(10 , end) , cursor-blink 0.4s step-end infinite alternate;
+// }
+
+// @keyframes typing{
+//     from{
+//         width: 0ch;
+//     }
+//     to{
+//         width: 9ch;
+//     }
+// } 
+
+// @keyframes cursor-blink{
+//     50%{
+//         border-color: transparent;
+//     }
+// }
+
+.p-sec-know{
+    color: $color3;
+    font-size: 18px;
+}
+
+.span-color{
+    color: $color3;
+}
+
+.svg-one{
+    color: #FF5A5F;
+}
+
+.svg-two{
+    color: #3F5D87;
+}
+
+.dis-two{
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.p-muted{
+    color: $color3;
+    font-size: 17px;
+}
+
+.dis-two{
+    color: $color1;
+}
+
+.h5-sec{
+    font-weight: 400;
+}
+
+.one-dis{
+    color: #000;
+}
+
+.p-muted2{
+    color: $color3;
+    font-size: 19px;
+}
+
+.p-tt{
+    color: $color3;
+}
+
+.muted{
+    color: $color3;
+
+}
